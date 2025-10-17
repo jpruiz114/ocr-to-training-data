@@ -286,12 +286,10 @@ Statistics:
 - Total characters: {total_chars:,}
 - Total words: {total_words:,}
 - API calls made: {api_calls}
-- Average confidence: {avg_confidence:.1f}% (if available)
 
 Cost Information:
 - API calls used: {api_calls}
 - Estimated cost: ${api_calls * 0.0015:.4f} (after free tier)
-- Free tier remaining: {max(0, 1000 - api_calls)} calls this month
 
 Files Generated:
 - Combined text: complete_extracted_text.txt
@@ -310,8 +308,6 @@ Files Generated:
         print(f"   • Total characters: {total_chars:,}")
         print(f"   • Total words: {total_words:,}")
         print(f"   • API calls used: {api_calls}")
-        if avg_confidence > 0:
-            print(f"   • Average confidence: {avg_confidence:.1f}%")
         print(f"💰 Cost: ${api_calls * 0.0015:.4f} (after free 1,000/month)")
         print(f"📁 Output files: {output_dir}/")
         
