@@ -1,0 +1,47 @@
+# Google Cloud credentials
+my-project-6250-1727894163971-ea4ec058ed15.json
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Training data and models
+*.bin
+*.pkl
+*.pt
+*.onnx
+*.pth
+prepared_training_data/
+
+# PDFs (symlinked from jfk-web-scraper)
+pdf/
+
+# OCR output folders with large amounts of text/images
+ocr_google_vision_pdf/*/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
