@@ -29,7 +29,7 @@ prepared_training_data/
 pdf/
 
 # OCR output folders with large amounts of text/images
-ocr_google_vision_pdf/*/
+ocr_google_vision_pdf/
 
 # IDE
 .vscode/
@@ -44,4 +44,3 @@ Thumbs.db
 
 # Logs
 *.log
-
