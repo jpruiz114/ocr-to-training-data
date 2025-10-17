@@ -93,21 +93,24 @@ Each processed PDF creates a directory in `ocr_google_vision_pdf/`:
 
 ```
 ocr-to-training-data/
-├── ocr_google_vision.py              # Google Cloud Vision OCR script
-├── combine_extracted_texts.py        # Consolidation script
-├── prepare.py                        # Training data preparation
-├── pdf/                              # Source PDF files (symlinked)
-├── ocr_google_vision_pdf/            # OCR output directory
-│   ├── [document-name]/             # Per-document results
-│   ├── consolidated_extracted_text.txt
-│   ├── consolidation_summary.txt
-│   └── notes.txt                    # Processing commands
-└── prepared_training_data/          # Binary training data
-    ├── train.bin
-    ├── val.bin
-    ├── meta.pkl
-    └── prepare_summary.txt
+├── ocr_google_vision.py                # Google Cloud Vision OCR script
+├── combine_extracted_texts.py          # Consolidation script
+├── prepare.py                          # Training data preparation
+├── pdf/                                # Source PDF files (symlinked)
+├── ocr_google_vision_pdf/              # OCR output directory
+│   ├── [document-name]/                # Per-document results
+│   ├── README.md                       # Dataset documentation
+│   ├── consolidated_extracted_text.txt # All OCR text combined
+│   ├── consolidation_summary.txt       # Consolidation report
+│   └── notes.txt                       # Processing commands
+└── prepared_training_data/             # Binary training data
+    ├── train.bin                       # Training dataset
+    ├── val.bin                         # Validation dataset
+    ├── meta.pkl                        # Vocabulary metadata
+    └── prepare_summary.txt             # Preparation statistics
 ```
+
+
 
 ## Deactivate Virtual Environment
 
